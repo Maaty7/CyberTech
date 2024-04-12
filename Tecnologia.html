@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    
+</head>
+<body>
+<header>
+    <nav class="navbar bg-body-tertiary" style="background-color: #f0f0f0;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="Pag_Principal.html">
+                <img src="imagenes/CyberTech.png" alt="Logo" width="" height="" class="d-inline-block align-text-top" href="Pag_Principal.html">
+            </a>
+            <!-- Barra de Busqueda -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 20px;">
+                <button class="btn btn-outline-success" type="submit" style="background-color: #2293FF; color: #fff; border-color: #2293FF">Buscar</button>
+            </form>
+            <!-- Botones del Login -->
+            <div>
+                <button id="loginBtn" class="btn btn-outline-success me-2" type="button" style="background-color: #2293FF; color: #fff; border-color: #2293FF;">Iniciar Sesion</button>
+                <button class="btn btn-sm btn-outline-secondary" type="button">Registrarse</button>
+            </div>
+            <!-- Icono del carrito -->
+            <a href="contenido carritoo.html" class="cart-icon" id="cartIcon"><i class="fas fa-shopping-cart"></i> <img src="imagenes/carrito-de-compras.png" alt="carrito" width="50px" height="50px"></a>
+        </div>
+    </nav> 
+
+    <!-- Barra para elegir categoria -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #f0f0f0;">
+        <div class="container-fluid mx-auto my-auto" style="background-color: #f0f0f0;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="background-color: #f0f0f0;">
+            <div class="navbar-nav mx-auto my-auto" style="background-color: #f0f0f0;" >
+              <a class="nav-link active" href="Tecnologia.html" style="text-align: left;">Tecnologia</a>
+              <a class="nav-link active" href="Hardware.html" style="text-align:center;">Hardware</a>
+              <a class="nav-link active" href="Perifericos.html" style="text-align:center;">Perifericos</a>
+              <a class="nav-link active" href="Electrodomesticos.html" style="text-align:center;">Electrodomesticos</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    
+    <h1 style="color: #0d68bf; margin-top:30px; margin-left: 120px;">Tecnologia</h1>
+    
+    <center>
+        <div class="product-card">
+            <img src="https://mi-store.sk/wp-content/uploads/2024/02/band8pro_1.png" alt="Relog Inteligente" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">Xiaomi</div>
+                <div class="descripcion">
+                    Xiaomi Smart Band 8 Pro - Light Gray
+                </div>
+                <div class="precio">$84.990</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://cdnx.jumpseller.com/divina/image/42843395/resize/480/480?1710369382" alt="PS5" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">Sony</div>
+                <div class="descripcion">
+                    Sony PlayStation 5 Slim
+                </div>
+                <div class="precio">$549.990</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/cl/sm-a057mzkgltl/gallery/cl-galaxy-a05s-sm-a057-sm-a057mzkgltl-thumb-539639353" alt="Telefono A05s" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">Samsung</div>
+                <div class="descripcion">
+                    Samsung Galaxy A05s (A057 / 128 GB / 4 GB / Black)
+                </div>
+                <div class="precio">$119.990</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://media.solotodo.com/media/cache/56/07/56070f29efb2da0b8ddfd667e5c1d488.png" alt="Notebook" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">HP</div>
+                <div class="descripcion">
+                    HP Pavilion Gaming 15-DK1037LA [309F7LA / SSD 1 TB]
+                </div>
+                <div class="precio">$598.880</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://technomarket.cl/cdn/shop/products/iphone11-black-select-2019_dc901c3b-5706-44bb-b0e1-0c2e4cee30c0.png?v=1641229645" alt="Iphone 11" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">Apple</div>
+                <div class="descripcion">
+                    Apple iPhone 11 (64 GB / Black)
+                </div>
+                <div class="precio">$269.990</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://technologyworld.cl/assets/img/product/apple-ipad-10-2-2021-lte-64-gb-silver-mk493ci-a.png" alt="Ipad" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">Apple</div>
+                <div class="descripcion">
+                    Apple iPad 10.2 2021 (64 GB / Silver)
+                </div>
+                <div class="precio">$359.990</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://media.solotodo.com/media/products/1616713_picture_1655918728.png" alt="Notebook" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">MSI</div>
+                <div class="descripcion">
+                    MSI GF63 Thin 11UC-270
+                </div>
+                <div class="precio">$639.990</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://cdnx.jumpseller.com/gpsaventura/image/40274200/resize/400/500?1695914698" alt="" class="imagen-producto"  >
+            <div class="product-details">
+                <div class="titulo">Garmin</div>
+                <div class="descripcion">
+                    Garmin Vivoactive 5 Music - Black / Slate
+                </div>
+                <div class="precio">$349.990</div>
+            </div>
+        </div>
+
+    </center>
+
+</header>
+
+
+<script src="js/bootstrap.min.js"></script>
+<!-- Script para manejar el botón de Iniciar Sesión -->
+<script>
+    document.getElementById('loginBtn').addEventListener('click', function() {
+        // Aquí puedes agregar la lógica para lo que sucede cuando se hace clic en el botón de Iniciar Sesión
+        alert('Botón de Iniciar Sesión clickeado');
+    });
+</script>
+
+</body>
+</html>

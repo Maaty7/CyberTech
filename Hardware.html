@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    
+</head>
+<body>
+<header>
+    <nav class="navbar bg-body-tertiary" style="background-color: #f0f0f0;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="Pag_Principal.html">
+                <img src="imagenes/CyberTech.png" alt="Logo" width="" height="" class="d-inline-block align-text-top" href="Pag_Principal.html">
+            </a>
+            <!-- Barra de Busqueda -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 20px;">
+                <button class="btn btn-outline-success" type="submit" style="background-color: #2293FF; color: #fff; border-color: #2293FF">Buscar</button>
+            </form>
+            <!-- Botones del Login -->
+            <div>
+                <button id="loginBtn" class="btn btn-outline-success me-2" type="button" style="background-color: #2293FF; color: #fff; border-color: #2293FF;">Iniciar Sesion</button>
+                <button class="btn btn-sm btn-outline-secondary" type="button">Registrarse</button>
+            </div>
+            <!-- Icono del carrito -->
+            <a href="contenido carritoo.html" class="cart-icon" id="cartIcon"><i class="fas fa-shopping-cart"></i> <img src="imagenes/carrito-de-compras.png" alt="carrito" width="50px" height="50px"></a>
+        </div>
+    </nav> 
+
+    <!-- Barra para elegir categoria -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #f0f0f0;">
+        <div class="container-fluid mx-auto my-auto" style="background-color: #f0f0f0;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="background-color: #f0f0f0;">
+            <div class="navbar-nav mx-auto my-auto" style="background-color: #f0f0f0;" >
+              <a class="nav-link active" href="Tecnologia.html" style="text-align: left;">Tecnologia</a>
+              <a class="nav-link active" href="Hardware.html" style="text-align:center;">Hardware</a>
+              <a class="nav-link active" href="Perifericos.html" style="text-align:center;">Perifericos</a>
+              <a class="nav-link active" href="Electrodomesticos.html" style="text-align:center;">Electrodomesticos</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    
+    <h1 style="color: #0d68bf; margin-top:30px; margin-left: 120px;">Hardware</h1>
+    <div class="container-fluid">
+        <!-- Content here -->
+        <center>
+            <div class="product-card">
+                <img src="https://static.gigabyte.com/StaticFile/Image/Global/f73f25ae18a7ece55e9c011d0c7cb55d/Product/35380" alt="rtx 4060" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">Gigabyte</div>
+                    <div class="descripcion">
+                        Gigabyte GeForce RTX­­ 4060 OC 8G
+                    </div>
+                    <div class="precio">$379.990</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://campcom.cl/wp-content/uploads/2023/05/1264967_picture_1672268308.png" alt="Ryzen 5" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">AMD</div>
+                    <div class="descripcion">
+                        AMD Ryzen 5 5500
+                    </div>
+                    <div class="precio">$102.990</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://publicapi.solotodo.com/products/122429/picture/?width=300&height=200" alt="16GB Ram" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">Kingston</div>
+                    <div class="descripcion">
+                        Kingston Fury Beast 1x 16GB 3200MHz
+                    </div>
+                    <div class="precio">$41.590</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://media.solotodo.com/media/products/1761438_picture_1684238411.png" alt="Placa madre" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">Gigabyte</div>
+                    <div class="descripcion">
+                        Gigabyte A520M K V2
+                    </div>
+                    <div class="precio">$68.990</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://jasaltec.cl/wp-content/uploads/2022/02/ktc-product-ssd-sfyrs-500gb-2-sm.jpg" alt="ssd 1tb" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">Kingston</div>
+                    <div class="descripcion">
+                        Kingston NV2 1 TB
+                    </div>
+                    <div class="precio">$62.100</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://media.solotodo.com/media/products/1324957_picture_1613160101.png" alt="Gabinete ATX" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">Hype Legend</div>
+                    <div class="descripcion">
+                        Hype Legend Gamer - White
+                    </div>
+                    <div class="precio">$51.690</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://media.solotodo.com/media/products/821908_picture_1538677610.png" alt="Fuente de poder" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">EVGA</div>
+                    <div class="descripcion">
+                        EVGA 700W 
+                    </div>
+                    <div class="precio">$68.900</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://media.solotodo.com/media/products/1869010_picture_1705873588.jpg" alt="Enfriamiento" class="imagen-producto"  >
+                <div class="product-details">
+                    <div class="titulo">Gamemax</div>
+                    <div class="descripcion">
+                        GameMax Iceburg 120 White
+                    </div>
+                    <div class="precio">$48.990</div>
+                </div>
+            </div>
+    
+        </center>
+      </div>
+
+</header>
+
+
+<script src="js/bootstrap.min.js"></script>
+<!-- Script para manejar el botón de Iniciar Sesión -->
+<script>
+    document.getElementById('loginBtn').addEventListener('click', function() {
+        // Aquí puedes agregar la lógica para lo que sucede cuando se hace clic en el botón de Iniciar Sesión
+        alert('Botón de Iniciar Sesión clickeado');
+    });
+</script>
+
+</body>
+</html>
