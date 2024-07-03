@@ -7,29 +7,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="styles/styles.css">
-
     <style>
         .contenedor {
-    width: 300px;  
-    overflow: hidden;
-}
+            width: 300px;  
+            overflow: hidden;
+        }
 
-.imagen {
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-        .imagen:hover {
-            transform: scale(3.2); 
+        .product-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-images {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product-details {
+            max-width: 300px;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #2293FF;
+        }
+        .discount-price {
+            font-size: 1.2em;
+            text-decoration: line-through;
+            color: #999;
+        }
+        .btn-comprar {
+            background-color: #2293FF;
+            color: #fff;
+            border-color: #2293FF;
         }
     </style>
-    
 </head>
 <body>
 <header>
     <nav class="navbar bg-body-tertiary" style="background-color: #f0f0f0;">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="Pag_Principal.html">
-                <img src="imagenes/CyberTech.png" alt="Logo" width="" height="" class="d-inline-block align-text-top" href="Pag_Principal.html">
+                <img src="imagenes/CyberTech.png" alt="Logo" class="d-inline-block align-text-top" href="Pag_Principal.html">
             </a>
             <!-- Barra de Busqueda -->
             <form class="d-flex">
@@ -42,7 +61,7 @@
                 <button class="btn btn-sm btn-outline-secondary" type="button">Registrarse</button>
             </div>
             <!-- Icono del carrito -->
-            <a href="contenido carritoo.html" class="cart-icon" id="cartIcon"><i class="fas fa-shopping-cart"></i> <img src="imagenes/carrito-de-compras.png" alt="carrito" width="50px" height="50px"></a>
+            <a href="contenido carritoo.html" class="cart-icon" id="cartIcon"><img src="imagenes/carrito-de-compras.png" alt="carrito" width="50px" height="50px"></a>
         </div>
     </nav> 
 
@@ -53,7 +72,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="background-color: #f0f0f0;">
-            <div class="navbar-nav mx-auto my-auto" style="background-color: #f0f0f0;" >
+            <div class="navbar-nav mx-auto my-auto" style="background-color: #f0f0f0;">
               <a class="nav-link active" href="Tecnologia.html" style="text-align: left;">Tecnologia</a>
               <a class="nav-link active" href="Hardware.html" style="text-align:center;">Hardware</a>
               <a class="nav-link active" href="Perifericos.html" style="text-align:center;">Perifericos</a>
@@ -62,22 +81,25 @@
           </div>
         </div>
     </nav>
-
-    <div class="contenedor">
-        <img src="https://dojiw2m9tvv09.cloudfront.net/74837/product/X_k552w-kr-sps-kumara-rainbow-white-spain14877.png?168&time=1712887743" alt="Imagen" class="imagen" id="imagen">
-    </div>
-
 </header>
 
+<main class="product-container">
+    <div class="product-images">
+        <img src="https://dojiw2m9tvv09.cloudfront.net/74837/product/X_k552w-kr-sps-kumara-rainbow-white-spain14877.png?168&time=1712887743" alt="Imagen" class="imagen-product">
+        <img src="https://vstore.cl/cdn/shop/products/open-uri20210813-2574-1hftwsl.png?v=1631646984&width=1500" alt="Imagen" class="imagenes-prod">
+        <img src="imagenes/product-thumbnail2.png" alt="Imagen">
+        <img src="imagenes/product-thumbnail3.png" alt="Imagen">
+        <img src="imagenes/product-thumbnail4.png" alt="Imagen">
+    </div>
+    <div class="product-details">
+        <h1>TECLADO GAMER KUMARA K552</h1>
+        <p>Mecánico, White, Iluminación Rainbow, Switch Red, Español</p>
+        <p class="precio-original" style="font-size: 25px;">$46.790</p>
+        <p class="precio-descuento" style="font-size: 30px;">$35.990</p>
+        <button class="button">Comprar ahora</button>
+    </div>
+</main>
 
-<script src="js/bootstrap.min.js"></script>
-<!-- Script para manejar el botón de Iniciar Sesión -->
-<script>
-    document.getElementById('loginBtn').addEventListener('click', function() {
-        // Aquí puedes agregar la lógica para lo que sucede cuando se hace clic en el botón de Iniciar Sesión
-        alert('Botón de Iniciar Sesión clickeado');
-    });
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

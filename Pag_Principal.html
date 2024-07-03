@@ -35,7 +35,18 @@
                 <button class="btn btn-sm btn-outline-secondary" type="button">Registrarse</button>
             </div>
             <!-- Icono del carrito -->
-            <a href="contenido carritoo.html" class="cart-icon" id="cartIcon"><i class="fas fa-shopping-cart"></i> <img src="imagenes/carrito-de-compras.png" alt="carrito" width="50px" height="50px"></a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-right: 70px;">
+                <img src="imagenes/carrito-de-compras.png" alt="" style="width: 30px ; height: 30px; ">
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h2 style="color: #2293FF;">Carrito de compras</h2>
+            </div>
+            </div>
         </div>
         
     </nav> 
@@ -86,6 +97,7 @@
 </head>
 <body>
 <center>
+<div class="container-fluid">
     <div class="product-card">
         <img src="imagenes/Audifonos.png" alt="Audifonos HyperX" class="imagen-producto"  >
         <div class="product-details">
@@ -99,42 +111,43 @@
         </div>
     </div>
 
-<div class="product-card">
-    <img src="https://backonline.cl/cdn/shop/products/iPhone_14_Pro_Max_Deep_Purple_PDP_Image_Position-1a_CLES.jpg?v=1690317177&width=1500" alt="Iphone 14 Pro Max" class="imagen-producto">
-    <div class="product-details">
-        <div class="titulo">Apple</div>
-        <div class="descripcion">
-            Iphone 14 Pro Max 5G 512GB
+    <div class="product-card">
+        <img src="https://backonline.cl/cdn/shop/products/iPhone_14_Pro_Max_Deep_Purple_PDP_Image_Position-1a_CLES.jpg?v=1690317177&width=1500" alt="Iphone 14 Pro Max" class="imagen-producto">
+        <div class="product-details">
+            <div class="titulo">Apple</div>
+            <div class="descripcion">
+                Iphone 14 Pro Max 5G 512GB
+            </div>
+            <div class="precio-original">$1.699.990</div>
+            <div class="descuento">Descuento: 24%</div>
+            <div class="precio-descuento">$1.299.990</div>
         </div>
-        <div class="precio-original">$1.699.990</div>
-        <div class="descuento">Descuento: 24%</div>
-        <div class="precio-descuento">$1.299.990</div>
     </div>
-</div>
 
-<a href="TecladoKumara.html" class="product-card">
-    <img src="https://dojiw2m9tvv09.cloudfront.net/74837/product/k552w-kr-sps-kumara-rainbow-white-spain26016.png" alt="Teclado Red Dragon" class="imagen-producto">
-    <div class="product-details">
-        <div class="titulo">RedDragon</div>
-        <div class="descripcion">
-            TECLADO GAMER KUMARA K552
+    <a href="TecladoKumara.html" class="product-card">
+        <img src="https://dojiw2m9tvv09.cloudfront.net/74837/product/k552w-kr-sps-kumara-rainbow-white-spain26016.png" alt="Teclado Red Dragon" class="imagen-producto">
+        <div class="product-details">
+            <div class="titulo">RedDragon</div>
+            <div class="descripcion">
+                TECLADO GAMER KUMARA K552
+            </div>
+            <div class="precio-original">$46.790</div>
+            <div class="descuento">Descuento: 30%</div>
+            <div class="precio-descuento">$35.990</div>
         </div>
-        <div class="precio-original">$46.790</div>
-        <div class="descuento">Descuento: 30%</div>
-        <div class="precio-descuento">$35.990</div>
-    </div>
-</a>
+    </a>
 
-<div class="product-card">
-    <img src="https://cdnx.jumpseller.com/technosun-cl/image/33693594/FOTO_WEB__58_.png?1680410716" alt="Alexa" class="imagen-producto">
-    <div class="product-details">
-        <div class="titulo">Amazon</div>
-        <div class="descripcion">
-            Alexa echo dot 5 Blanco
+    <div class="product-card">
+        <img src="https://cdnx.jumpseller.com/technosun-cl/image/33693594/FOTO_WEB__58_.png?1680410716" alt="Alexa" class="imagen-producto">
+        <div class="product-details">
+            <div class="titulo">Amazon</div>
+            <div class="descripcion">
+                Alexa echo dot 5 Blanco
+            </div>
+            <div class="precio-original">$79.990</div>
+            <div class="descuento">Descuento: 34%</div>
+            <div class="precio-descuento">$52.990</div>
         </div>
-        <div class="precio-original">$79.990</div>
-        <div class="descuento">Descuento: 34%</div>
-        <div class="precio-descuento">$52.990</div>
     </div>
 </div>
 
@@ -143,13 +156,6 @@
 
 
 <script src="js/bootstrap.min.js"></script>
-<!-- Script para manejar el botón de Iniciar Sesión -->
-<script>
-    document.getElementById('loginBtn').addEventListener('click', function() {
-        // Aquí puedes agregar la lógica para lo que sucede cuando se hace clic en el botón de Iniciar Sesión
-        alert('Botón de Iniciar Sesión clickeado');
-    });
-</script>
 
 </body>
 </html>
